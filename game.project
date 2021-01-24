@@ -12,5 +12,8 @@ height = 640
 input_method = HiddenInputField
 
 [project]
-title = text-validator
+title = text validator
+
+[library]
+include_dirs = text_validator
 
