@@ -1,2 +1,2 @@
 # text-validator
-Validating input text for different types of fields
+Defold library for validating input text for different types of fields
