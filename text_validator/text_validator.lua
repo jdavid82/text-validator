@@ -7,7 +7,9 @@ function M.validate_display_name_letter(letter)
 end
 
 function M.validate_display_name(display_name)
-	for c in display_name:gmatch"." do
+	local c
+	for i = 1, string.len(display_name) do
+		c = string.sub(display_name, i, i)
 		if string.find(valid_letters, c) == nil then
 			return false
 		end
