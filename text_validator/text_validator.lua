@@ -7,7 +7,7 @@ function M.validate_display_name_letter(letter)
 end
 
 function M.validate_display_name(display_name)
-	for c in str:gmatch"." do
+	for c in display_name:gmatch"." do
 		if string.find(valid_letters, c) == nil then
 			return false
 		end
